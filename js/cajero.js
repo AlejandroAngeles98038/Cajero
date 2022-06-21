@@ -1,6 +1,19 @@
-const cuentas = [
-    { nombre: "Mali", saldo: 200 },
-    { nombre: "Gera", saldo: 290 },
-    { nombre: "Maui", saldo: 67 },
-  ];
+const input=document.getElementById("password")
+let form = document.getElementById("form")
+  form.addEventListener ("submit" , function(event){
+    event.preventDefault()
+    console.log(input.value)
+    validacionContraseña(input.value);
+
+  })
+
+const validacionContraseña = () => {
+  let pass = document.getElementById('password').value;
+  if(pass == '1234'){
+    location = 'principal.html';
+  }else{
+    alert('La contraseña ingresada no es correcta, intentelo de nuevo')
+  }
+} 
+
 
