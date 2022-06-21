@@ -3,3 +3,4 @@ const cuentas = [
     { nombre: "Gera", saldo: 290 },
     { nombre: "Maui", saldo: 67 },
   ];
+
