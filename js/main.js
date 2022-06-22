@@ -1,15 +1,26 @@
-var cuentas = [
-    { nombre: "Mali", saldo: "200"},
-    { nombre: "Gera", saldo: "290"},
-    { nombre: "Maui", saldo: "67" },
-  ];
-  let suma;
-  let resta;
+   function comparacion () {
+    let password = document.getElementById('password').value;
+    let user = document.getElementById('username').value;
+    let valid = -1;
   
- console.log(cuentas);
- console.log(cuentas[0].nombre)
-
-
+  
+    var cuentas = ["Mali","Gera","Maui",];
+  
+    var contraseñas = ["1234", "5678", "9845"];
+  
+    for( i = 0; i < cuentas.length; i++) {
+      if ((user == cuentas[i]) && (password == contraseñas[i])){
+       valid = i;
+       
+      }
+    }
+    if (valid != -1)  {
+      location = 'principal.html';
+    }
+    else{
+      alert('Usuario o Contraseña erronea')
+    }
+  }
   const input=document.getElementById("username")
   console.log(input.value)
   let form = document.getElementById("form")
@@ -21,14 +32,7 @@ var cuentas = [
 
   })
 
-function comparacion(nombreDeValue){
-for( var index=0; index<=cuentas.length-1; index++){
- if(cuentas[index].nombre==nombreDeValue)
-{
-  location = "contraseña.html";
-}
-}
-return console.log("Esta cuenta no existe")
-}
 
+
+ 
 
