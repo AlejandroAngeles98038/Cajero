@@ -21,6 +21,6 @@ const validacionContraseña3 = () => {
     if(pass == '9876'){
       location = 'principal.html';
     }else{
-      alert('La contraseña ingresada no es correcta, intentelo de nuevo')
+      alert(' Error , La contraseña ingresada no es correcta, intentelo de nuevo')
     }
   } 
