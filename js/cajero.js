@@ -16,4 +16,11 @@ const validacionContraseña = () => {
   }
 } 
 
-
+const validacionContraseña3 = () => {
+    let pass = document.getElementById('password').value;
+    if(pass == '9876'){
+      location = 'principal.html';
+    }else{
+      alert('La contraseña ingresada no es correcta, intentelo de nuevo')
+    }
+  } 
