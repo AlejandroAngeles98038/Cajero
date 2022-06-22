@@ -1,29 +1,16 @@
-function validar () {
-  let password = document.getElementById('password');
-  let valid= false;
+var cuentas = [
+  { nombre: "Mali", saldo: 200 },
+  { nombre: "Gera", saldo: 290 },
+  { nombre: "Maui", saldo: 67 },
+];
 
-
-  var cuentas = [
-  { nombre: "Mali", saldo: "200"},
-  { nombre: "Gera", saldo: "290"},
-  { nombre: "Maui", saldo: "67" },
-  ];
-
-  var contraseñas = [
-  { nombre: "Mali", contraseñas: "1234"},
-  { nombre: "Gera", contraseñas: "5489",},
-  { nombre: "Maui" ,contraseñas: "9856",},
-  ];
-
-  for( i = 0; i < cuentas.length; i++) {
-    if(password == contraseñas[i]){
-      valid = true;
+function saldo(){
+  const usuarioLogueado = localStorage.getItem("cuentaLogueada");
+  console.log(usuarioLogueado);
+  for (let i = 0; i < cuentas.length; i++) {
+    if(usuarioLogueado == cuentas[i].nombre){
+      console.log(cuentas[i].saldo)
     }
   }
-
 }
- validar();
- console.log('Acceso')
-
-
 
