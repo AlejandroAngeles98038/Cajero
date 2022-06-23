@@ -14,6 +14,7 @@ var cuentas = [
       console.log(cuentas[i]);
       if ((user == cuentas[i].nombre) && (password == cuentas[i].password)){
         localStorage.setItem("cuentaLogueada", cuentas[i].nombre)
+        localStorage.setItem("saldoDelUsuario", cuentas[i].saldo)
         return window.location.href = 'principal.html';
         
         
